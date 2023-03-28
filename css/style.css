@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+body {
+	padding: 0;
+	margin: 0;
+
+}
+
+h3{
+	color: silver;
+}
+
+body, html
+{
+	font-size: 16px !important;
+}
+
+.nav__item
+{
+	padding: 15px 25px !important;
+	margin: 2px !important;
+}
+
+.main__content
+{
+	width: 80% !important;
+	margin: 0 auto !important;
+}
+
+.ui-button
+{
+	padding: 10px 25px !important;
+}
+
+header {
+	background-color: #13161B;
+	padding: 15px;
+}
+
+footer {
+	background-color: #13161B;
+	padding: 10px;
+}
+
+main {
+	background-color: #151922;
+}
+
+h2 {
+	color: silver;
+}
+
+p{
+	font-family: 'Arimo', sans-serif;
+}
+
+pl {
+	color: silver;
+	font-family: 'Arimo', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	
+	font-family: 'Arimo', sans-serif;
+}
+/**/
+form {
+    border: 10px solid #f1f1f1;
+}
+/**/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #87ceeb;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ссс;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #87ceeb;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/**/
+
+.post {
+	background-color: #151922;
+	padding: 80px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	display: flex;
+}
+
+.post img {
+	margin: 20px;
+	border-radius: 7px;
+}
+
+.footer-columns {
+	display: flex;
+}
+
+.footer-column {
+	flex: 50%;
+	margin: 20px;
+}
+
+#menu1 {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+#menu1 ul {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu1 > ul::after {
+	display: block;
+	width: 100%;
+	height: 0px;
+	clear: both;
+	content: " ";
+}
+
+#menu1 ul li {
+	display: block;
+	float: left;
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+#menu1 ul li a {
+	display: block;
+	padding: 9px 25px 0px 25px;
+	font-size: 16px;
+	line-height: 1.3em;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	color: silver;
+	height: 36px;
+}
+
+#menu1 ul li ul {
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	display: none;
+	width: 200px;
+	background: silver;
+}
+
+#menu1 ul li:hover ul{
+	display: block;
+}
+
+#menu1 ul li ul li {
+	float: none;
+	width: 100%;
+}
+
+#menu1 ul li ul li a {
+	display: block;
+	text-transform: none;
+	height: auto;
+	padding: 7px 25px;
+	width: 100%;
+	box-sizing: border-box;
+	border-top: 2px solid #FFF;
+	color: #FFF;
+}
+
+#menu1 ul li ul li:first {
+}
+
+.carousele-element img {
+	/*width: 100%; */
+}
